@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.productmanagement.model.Product" table="Product">
+		<id name="Id" column="Id" type="java.lang.Integer">
+			<generator class="increment"></generator>
+		</id>
+		<property name="name" type="java.lang.String">
+            <column name="Name" length="100" />
+        </property>
+		<property name="description" type="java.lang.String">
+            <column name="Description" length="2000" />
+        </property>
+		<property name="price" type="java.lang.Double">
+			<column name="Price" />
+		</property>
+		<property name="available" type="java.lang.String">
+			<column name="Available" />
+		</property>
+		<property name="categoryPath" type="java.lang.String">
+			<column name="CategoryPath" />
+		</property>
+		<property name="popularity" type="java.lang.Integer">
+			<column name="Popularity" />
+		</property>
+		<property name="createDate" type="java.util.Date" insert="false" update="false">
+			<column name="CreateDate" />
+		</property>
+		<property name="updateDate" type="java.util.Date" insert="false" update="true">
+			<column name="UpdateDate" />
+		</property>
+	</class>
+</hibernate-mapping>
