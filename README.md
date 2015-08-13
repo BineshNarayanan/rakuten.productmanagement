@@ -22,5 +22,6 @@ Improvements foreseen:
 3. Better logging.
 4. ProductFilter implementation.
 5. Better validation on UI.
+6. In the database design, CategoryId is a column in Product table which can be made as a foreign key with Category table. Idea is to write a function which will give the fully qualified path of the category when given a category id as input.
 
 
