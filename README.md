@@ -1,4 +1,4 @@
-# rakuten.productmanagement
+# productmanagement
 
 Note : Please create a database with the scripts of the table in folder DBScripts. If the database connection fails the test also fails, else choose to skip tests.
 
